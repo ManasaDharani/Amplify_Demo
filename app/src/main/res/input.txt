@@ -1,0 +1,2 @@
+file '/data/data/com.example.amplify_demo/files/fileSequence0.ts'
+file '/data/data/com.example.amplify_demo/files/fileSequence1.ts'
