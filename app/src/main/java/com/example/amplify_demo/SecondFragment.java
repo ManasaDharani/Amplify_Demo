@@ -31,4 +31,7 @@ public class SecondFragment extends Fragment {
             }
         });
     }
+
+    public static class GraphQlQueries {
+    }
 }

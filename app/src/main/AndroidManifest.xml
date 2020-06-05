@@ -2,25 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.amplify_demo">
-<!--     <uses-sdk-->
-<!--     android:minSdkVersion="24"-->
-<!--         tools:overrideLibrary="com.arthenica.mobileffmpeg" />-->
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="24" -->
+    <!-- tools:overrideLibrary="com.arthenica.mobileffmpeg" /> -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoDisplay"></activity>
+        <activity android:name=".Downloaded_VIdeos"></activity>
+        <activity android:name=".VideoDisplay" />
         <activity android:name=".VideoLinkActivity" />
         <activity android:name=".AuthenticationActivity">
             <intent-filter>
@@ -35,7 +38,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
-
             <!--
             intent-filter>
                 <action android:name="android.intent.action.MAIN" />

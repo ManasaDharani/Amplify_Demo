@@ -32,6 +32,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                         break;
                     case SIGNED_OUT:
                         showSignIn();
+                        showSignIn();
                         break;
                     default:
                         AWSMobileClient.getInstance().signOut();

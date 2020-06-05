@@ -32,7 +32,7 @@ public class ClientFactory {
     }
 
     public static synchronized AWSAppSyncClient appSyncClient() {
+        Log.i("AppSync",client.toString());
         return client;
     }
 }
-
